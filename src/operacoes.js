@@ -33,10 +33,18 @@ function mult(num1, num2) {
     return num1 * num2
 }
 
+function rq(num1, num2) {
+    if(isNaN(num1) || isNaN(num2)){
+        throw "Não é um número"
+    }
+    return Math.sqrt(num1)
+}
+
 module.exports = {
     sum,
     sub,
     div,
     pot,
-    mult
+    mult,
+    rq
 }
